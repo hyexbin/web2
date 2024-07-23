@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MUSINSA</title>
+  <script defer src="js/jquery-3.7.1.js"></script>
+  <script defer src="js/script.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-------------------- #wrap으로 전체 레이아웃 감싸기 -->
+  <div id="wrap">
+    <header>
+      <div class="logo"><a href="#"><img src="img/logo.png" alt="로고"></a></div>
+      <div class="menu1">
+        <ul>
+          <li><a href="#">SEARCH</a></li>
+          <li><a href="#">MY PAGE</a></li>
+          <li><a href="#">MY LIKE</a></li>
+          <li><a href="#">SHOPPING BAG</a></li>
+          <li><a href="#">LOGIN</a></li>
+        </ul>
+      </div> 
+    </header>
+    <!----------------------------- 메인메뉴 -->
+    <div class="main_menu">
+      <ul>
+        <li><a href="#women" class="active">WOMEN</a></li>
+        <li><a href="#men">MEN</a></li>
+        <li><a href="#interior">INTERIOR</a></li>
+        <li><a href="#kitchen">KITCHEN</a></li>
+        <li><a href="#electronics">ELECTRONICS</a></li>
+        <li><a href="#digital">DIGITAL</a></li>
+        <li><a href="#beauty">BEAUTY</a></li>
+        <li><a href="#food">FOOD</a></li>
+        <li><a href="#leisure">LEISURE</a></li>
+        <li><a href="#kids">KIDS</a></li>
+        <li><a href="#sub_brand">BRAND</a></li>
+        <li><a href="#">EVENT</a></li>
+        <li><a href="#">MAGAZINE</a></li>
+      </ul>
+    </div>
+    <!----------------------------- 서브 메뉴 -->
+    <div class="sub_box">
+      <div class="women" id="women">
+        <ul>
+          <li><a href="#">의류</a></li>
+          <li><a href="#">ALL</a></li>
+          <li><a href="#">NEW</a></li>
+          <li><a href="#">EXCLUSIVE</a></li>
+          <li><a href="#">상의</a></li>
+          <li><a href="#">바지</a></li>
+          <li><a href="#">원피스</a></li>
+          <li><a href="#">스커트</a></li>
+          <li><a href="#">점프수트</a></li>
+          <li><a href="#">셋업</a></li>
+          <li><a href="#">액티브웨어</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">가방</a></li>
+          <li><a href="#">ALL</a></li>
+          <li><a href="#">NEW</a></li>
+          <li><a href="#">EXCLUSIVE</a></li>
+          <li><a href="#">숄더백</a></li>
+          <li><a href="#">크로스백</a></li>
+          <li><a href="#">토트백</a></li>
+          <li><a href="#">에코, 캔버스백</a></li>
+          <li><a href="#">백팩</a></li>
+          <li><a href="#">클러치</a></li>
+          <li><a href="#">파우치</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">신발</a></li>
+          <li><a href="#">ALL</a></li>
+          <li><a href="#">NEW</a></li>
+          <li><a href="#">EXCLUSIVE</a></li>
+          <li><a href="#">해외브랜드</a></li>
+          <li><a href="#">플랫, 로퍼</a></li>
+          <li><a href="#">부츠</a></li>
+          <li><a href="#">펌프스</a></li>
+          <li><a href="#">샌들</a></li>
+          <li><a href="#">슬리퍼, 뮬</a></li>
+          <li><a href="#">스니커즈</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">악세사리</a></li>
+          <li><a href="#">ALL</a></li>
+          <li><a href="#">NEW</a></li>
+          <li><a href="#">EXCLUSIVE</a></li>
+          <li><a href="#">해외브랜드</a></li>
+          <li><a href="#">주얼리</a></li>
+          <li><a href="#">모자</a></li>
+          <li><a href="#">시계</a></li>
+          <li><a href="#">지갑, 카드케이스</a></li>
+          <li><a href="#">아이웨어</a></li>
+          <li><a href="#">벨트</a></li>
+        </ul>
+      </div>
+      <div class="men" id="men">
+        <ul>
+          <li><a href="#">의류</a></li>
+          <li><a href="#">ALL</a></li>
+          <li><a href="#">NEW</a></li>
+          <li><a href="#">EXCLUSIVE</a></li>
+          <li><a href="#">해외브랜드</a></li>
+          <li><a href="#">아우터</a></li>
+          <li><a href="#">상의</a></li>
+          <li><a href="#">하의</a></li>
+          <li><a href="#">셋업</a></li>
+          <li><a href="#">홈웨어</a></li>
+          <li><a href="#">이너웨어</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">가방</a></li>
+          <li><a href="#">ALL</a></li>
+          <li><a href="#">NEW</a></li>
+          <li><a href="#">EXCLUSIVE</a></li>
+          <li><a href="#">해외브랜드</a></li>
+          <li><a href="#">크로스백</a></li>
+          <li><a href="#">웨이스트백</a></li>
+          <li><a href="#">토트백</a></li>
+          <li><a href="#">백팩</a></li>
+          <li><a href="#">숄더백</a></li>
+          <li><a href="#">랩탑백</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">신발</a></li>
+          <li><a href="#">ALL</a></li>
+          <li><a href="#">NEW</a></li>
+          <li><a href="#">EXCLUSIVE</a></li>
+          <li><a href="#">해외브랜드</a></li>
+          <li><a href="#">스니커즈</a></li>
+          <li><a href="#">로퍼</a></li>
+          <li><a href="#">구두</a></li>
+          <li><a href="#">부츠</a></li>
+          <li><a href="#">샌들</a></li>
+          <li><a href="#">슈즈 악세사리</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">악세사리</a></li>
+          <li><a href="#">ALL</a></li>
+          <li><a href="#">NEW</a></li>
+          <li><a href="#">EXCLUSIVE</a></li>
+          <li><a href="#">해외브랜드</a></li>
+          <li><a href="#">지갑. 카드케이스</a></li>
+          <li><a href="#">모자</a></li>
+          <li><a href="#">시계</a></li>
+          <li><a href="#">아이웨어</a></li>
+          <li><a href="#">넥타이</a></li>
+          <li><a href="#">벨트</a></li>
+        </ul>
+      </div>
+      <div class="interior" id="interior">
+        <ul>
+          <li><a href="#">가구, 인테리어</a></li>
+          <li><a href="#">ALL</a></li>
+          <li><a href="#">NEW</a></li>
+          <li><a href="#">EXCLUSIVE</a></li>
+          <li><a href="#">침구</a></li>
+          <li><a href="#">홈패브릭</a></li>
+          <li><a href="#">가구</a></li>
+          <li><a href="#">조명</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">홈데코</a></li>
+          <li><a href="#">가드닝</a></li>
+          <li><a href="#">홈프레그런스</a></li>
+          <li><a href="#">아트, 디자인</a></li>
+          <li><a href="#">책, 음반</a></li>
+          <li><a href="#">스테이셔너리</a></li>
+        </ul>
+      </div>
+
+      <div class="kitchen" id="kitchen">
+        <ul>
+          <li><a href="#">주방, 생활</a></li>
+          <li><a href="#">ALL</a></li>
+          <li><a href="#">NEW</a></li>
+          <li><a href="#">EXCLUSIVE</a></li>
+          <li><a href="#">청소, 수납</a></li>
+          <li><a href="#">쿡웨어</a></li>
+          <li><a href="#">테이블웨어</a></li>
+          <li><a href="#">욕실</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">반려동물</a></li>
+        </ul>
+      </div>
+
+      <div class="electronics" id="electronics">
+        <ul>
+          <li><a href="#">가전</a></li>
+          <li><a href="#">ALL</a></li>
+          <li><a href="#">NEW</a></li>
+          <li><a href="#">영상가전</a></li>
+          <li><a href="#">주방가전</a></li>
+          <li><a href="#">세탁기, 건조기</a></li>
+          <li><a href="#">청소기</a></li>
+          <li><a href="#">생활가전</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">계절가전</a></li>
+          <li><a href="#">이미용가전</a></li>
+          <li><a href="#">건강가전</a></li>
+          <li><a href="#">리퍼브</a></li>
+        </ul>
+      </div>
+
+      <div class="digital" id="digital">
+        <ul>
+          <li><a href="#">컴퓨터, 디지털</a></li>
+          <li><a href="#">ALL</a></li>
+          <li><a href="#">NEW</a></li>
+          <li><a href="#">음향기기</a></li>
+          <li><a href="#">모바일, 웨어러블</a></li>
+          <li><a href="#">모바일 악세사리</a></li>
+          <li><a href="#">PC, 노트북</a></li>
+          <li><a href="#">게임</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">사진</a></li>
+          <li><a href="#">자동차용품, 장난감</a></li>
+          <li><a href="#">스마트모빌리티</a></li>
+        </ul>
+      </div>
+
+      <div class="beauty" id="beauty">
+        <ul>
+          <li><a href="#">뷰티</a></li>
+          <li><a href="#">ALL</a></li>
+          <li><a href="#">NEW</a></li>
+          <li><a href="#">스킨케어</a></li>
+          <li><a href="#">클렌징</a></li>
+          <li><a href="#">베이스 메이크업</a></li>
+          <li><a href="#">포인트 메이크업</a></li>
+          <li><a href="#">바디케어</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">쉐이빙, 제모</a></li>
+          <li><a href="#">헤어케어</a></li>
+          <li><a href="#">향수, 탈취</a></li>
+          <li><a href="#">뷰티 디바이스</a></li>
+          <li><a href="#">다이어트, 헬스</a></li>
+          <li><a href="#">미용 소품</a></li>
+          <li><a href="#">덴탈케어</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">아이섀도</a></li>
+          <li><a href="#">립틴트</a></li>
+        </ul>
+      </div>
+
+      <div class="food" id="food">
+        <ul>
+          <li><a href="#">푸드</a></li>
+          <li><a href="#">ALL</a></li>
+          <li><a href="#">NEW</a></li>
+          <li><a href="#">선물세트</a></li>
+          <li><a href="#">음료</a></li>
+          <li><a href="#">가공식품</a></li>
+          <li><a href="#">신선, 냉장</a></li>
+        </ul>
+      </div>
+
+      <div class="leisure" id="leisure">
+        <ul>
+          <li><a href="#">레저</a></li>
+          <li><a href="#">ALL</a></li>
+          <li><a href="#">NEW</a></li>
+          <li><a href="#">캠핑</a></li>
+          <li><a href="#">등산, 하이킹</a></li>
+          <li><a href="#">골프</a></li>
+          <li><a href="#">수영</a></li>
+          <li><a href="#">러닝</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">실내운동</a></li>
+          <li><a href="#">여행</a></li>
+          <li><a href="#">테니스</a></li>
+          <li><a href="#">자전거</a></li>
+        </ul>
+      </div>
+
+      <div class="kids" id="kids">
+        <ul>
+          <li><a href="#">유아, 아동</a></li>
+          <li><a href="#">ALL</a></li>
+          <li><a href="#">NEW</a></li>
+          <li><a href="#">의류</a></li>
+          <li><a href="#">신발, 가방</a></li>
+          <li><a href="#">아동, 홈</a></li>
+        </ul>
+      </div>
+
+      <div class="sub_brand" id="sub_brand">
+        <ul>
+          <li><a href="#">브랜드</a></li>
+          <li><a href="#">ALL</a></li>
+          <li><a href="#">베이식</a></li>
+          <li><a href="#">영 캐주얼</a></li>
+          <li><a href="#">여성 캐주얼</a></li>
+          <li><a href="#">스트리트, 그래픽</a></li>
+          <li><a href="#">포멀, 어반 캐주얼</a></li>
+          <li><a href="#">트래디셔널</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">컨템포러리</a></li>
+          <li><a href="#">하이패션, 럭셔리</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!----------------------------- 슬라이드 -->
+    <div class="slide_box">
+      <ul class="slide">
+        <li class="slide1">
+          <a href="#"><img src="img/main_slide1.png" alt="슬라이드1"></a>
+          <p>마리떼 단독 특가</p>
+          <p>7/1(월) 저녁 8시</p>
+          <span>마리떼 | 최대 40% + 10%쿠폰</span>
+        </li>
+
+        <li class="slide2">
+          <a href="#"><img src="img/main_slide2.png" alt="슬라이드2"></a>
+          <p>썸웨어버터</p>
+          <p>가방만 모아서 더 특별하게</p>
+          <span>썸웨어버터 | 최대 15% & 10%쿠폰</span>
+        </li>
+
+        <li>
+          <a href="#"><img src="img/main_slide1.png" alt="슬라이드1"></a>
+          <p>마리떼 단독 특가</p>
+          <p>7/1(월) 저녁 8시</p>
+          <span>마리떼 | 최대 40% + 10%쿠폰</span>
+        </li>
+
+        <li>
+          <a href="#"><img src="img/main_slide2.png" alt="슬라이드1"></a>
+          <p>마리떼 단독 특가</p>
+          <p>7/1(월) 저녁 8시</p>
+          <span>마리떼 | 최대 40% + 10%쿠폰</span>
+        </li>
+        
+      </ul>
+    </div>
+    <!------------------------------ new 영역 -->
+    <div class="new_box">
+      <div class="h1_p_box"><h1>NEW</h1></div>
+      <div class="new"><a href="index2.html"><img src="img/new_grove.png" alt="그로브"></a></div>
+      <a href="index2.html"><p>GROVE</p></a>
+    </div>
+    <!------------------------------ 브랜드 영역  -->
+    <div class="brand_box">
+      <article class="salomon">
+        <a href="#"><img src="img/brand_SALOMON.png" alt="살로몬"></a>
+        <p>SALOMON</p>
+        <span>살로몬</span>
+    </article>
+
+      <article class="travle">
+        <a href="#"><img src="img/brand_TRAVLE.png" alt="트래블"></a>
+        <p>TRAVLE</p>
+        <span>트래블</span>
+      </article>
+
+      <article class="standoil">
+        <a href="#"><img src="img/brand_STANDOIL.png" alt="스탠드오일"></a>
+        <p>STAND OIL</p>
+        <span>스탠드오일</span>
+      </article>
+    </div>
+
+    <!---------------------------------- 룩북 영역 -->
+    <div class="lookbook_box">
+      <h1>MAGAZINE</h1>
+      <h2>#LOOKBOOK</h2>
+      <article class="umbro">
+        <a href="#"><img src="img/lookbook2.png" alt="룩북2"></a>
+        <p>UMBRO</p>
+        <span>2024, SUMMER</span>
+      </article>
+
+      <article class="rolling">
+        <a href="#"><img src="img/lookbook1.png" alt="룩북2"></a>
+        <p>ROLLINGSTUDIOS</p>
+        <span>SPRING/SUMMER</span>
+      </article>
+    
+    <!---------------------------------- 스냅 영역 -->
+    <div class="snap_box">
+      <div class="snap_box2">
+        <div class="snap_left">
+          <a href="#"><img src="img/snap.png" alt="스냅이미지"></a>
+          <p>#SNAP</p>
+          <span>Show your style</span>
+        </div>
+        <div class="snap_right">
+          <article class="snap_item">
+            <a href="#"><img src="img/snap_bag_img.png" alt="스냅아이템1"></a>
+            <div class="snap_text">
+              <h3>JILL BY JILLSTUART</h3>
+              <p>[미나] 스몰 바게트 숄더백 - 2color</p>
+              <span><b>22%</b>99,000원</span>
+            </div>
+          </article>
+          <article class="snap_item">
+            <a href="#"><img src="img/snap_cap_img.png" alt="스냅아이템2"></a>
+            <div class="snap_text">
+              <h3>HELLO SUNRISE</h3>
+              <p>HS OVAL Logo 6Panel Cap_Navy</p>
+              <span><b>10%</b>48,600원</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+    <!------------------------------- 라이브 영역 -->
+    <div class="live_box">
+      <div class="live_box2">
+        <p class="p1">LIVE</p>
+        <p class="p2">ON</p>
+        <article class="live1">
+           <a href="#"><img src="img/live1.jpg" alt="라이브1"></a>
+           <span class="span1">마뗑킴 | 오늘 오후 9시</span>
+           <span class="span2">최대 40% 할인 +10% 할인 쿠폰</span>
+        </article>
+      </div>
+    </div>
+    <!------------------------------ 푸터 -->
+    <div class="footer_box">
+      <footer>
+        <dl>
+          <dt><a href="#">사업자 정보</a><span class="dt_a"><img src="img/icon_arrow.svg" alt="화살표"></span>
+          </dt>
+          <dd class="dd1">
+            <div class="dd_text acco_con">
+              <p>(주) 무신사 | 대표자 : 조만호, 박준모, 한문일 | 주소: 서울특별시 성동구 아차산로 13길 11, 1층<br>
+                (성수동2가, 무신사캠퍼스엔1) | 개인정보보호책임자 : 정광은(privacy@musinsa.com) |<br>
+                호스팅사업자 :(주)무신사 | 통신판매업 : 2022-서울성동-01952 |<br>
+                사업자등록번호 :211-88-79575 (사업자정보확인)
+              </p>
+              <p>
+                당사는 고객님이 현금 결제한 금액에 대해 우리은행과 채무지급보증 계약을 체결하여<br>
+                안전거래를 보장하고 있습니다. <span>(서비스 가입사실 확인)</span>
+              </p>
+          </div>
+          </dd>
+
+          <dt><a href="#">법적 공지사항</a><span href="#" class="dt_a"><img src="img/icon_arrow.svg" alt="화살표"></span>
+          </dt>
+          <dd class="dd2">
+            <div class="dd_text acco_con">
+              <p><a href="#">회사 소개</a></p>
+              <p><a href="#">공지사항</a></p>
+              <p><a href="#">개인정보처리방침</a></p>
+              <p><a href="#">영상정보처리기기 운영ㆍ관리 방침</a></p>
+            </div>
+          </dd>
+
+          <dt><a href="#">파트너 지원</a><span href="#" class="dt_a"><img src="img/icon_arrow.svg" alt="화살표"></span>
+          </dt>
+          <dd class="dd3">
+            <div class="dd_text acco_con">
+              <p><a href="#">입점 및 제휴 문의</a></p>
+              <p><a href="#">브랜드 구인</a></p>
+          </div>
+          </dd>
+
+          <dt><a href="#">고객 지원</a><span href="#" class="dt_a"><img src="img/icon_arrow.svg" alt="화살표"></span>
+          </dt>
+          <dd class="dd4">
+            <div class="dd_text acco_con">
+              <p><a href="#">1:1 문의하기</a></p>
+              <p><a href="#">FAQ 자주 묻는 질문</a></p>
+              <p><a href="#">고객센터 1544-7199 (유료, 평일 오전 9시-오후 6시)</a></p>
+            </div>
+          </dd>
+        </dl>
+          <div class="copyright">
+            <div class="copyright_t ">
+              <p>&copy; 2012 MUSINSA ALL RIGHTS RESERVED</p>
+              <p><a href="#">개인정보처리방침 <span>이용약관</span></a></p>
+              <p>일부 상품의 경우 주식회사 무신사는 통신판매의 당사자가  아닌 통신판매중개자로서<br>
+              상품, 상품정보, 거래에 대한 책임이 제한될 수 있으므로, <br>
+              각 상품 페이지에서 구체적인 내용을 확인하시기 바랍니다.</p>
+            </div>
+          </div>
+          <div class="sns">
+            <ul>
+              <li><a href="#"><img src="img/icon_insta.svg" alt="인스타"></a></li>
+  
+              <li><a href="#"><img src="img/icon_youtube.svg" alt="유튜브"></a></li>
+  
+              <li><a href="#"><img src="img/icon_x.svg" alt="엑스"></a></li>
+  
+              <li><a href="#"><img src="img/icon_tiktok.svg" alt="틱톡"></a></li>
+  
+              <li><a href="#"><img src="img/icon_musinsa.svg" alt="무신사"></a></li>
+            </ul>
+          </div>
+
+        
+        
+      </footer>
+    </div>
+    
+  </div>
+  <!-- #wrap 이 끝나는 div -->
+</body>
+</html>
